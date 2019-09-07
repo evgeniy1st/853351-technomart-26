@@ -209,25 +209,43 @@
         <h2>Фильтр товаров</h2>
         <form class="side-filter">
             <p>Фильтр</p>
-            <div class="filter-price"></div>
+            <fieldset class="filter-price">
+                <legend>Цена:</legend>
+                <input type="text" value="0"> 
+                <span>-</span>
+                <input type="text" value="3000"> 
+              </fieldset>
+
 
             <fieldset class="filter-manufacturer">
               <legend>Производители:</legend>
-              <input type="checkbox">Bosch</inpput>
-              <input type="checkbox">Интерскол</inpput>
-              <input type="checkbox">Makita</inpput>
-              <input type="checkbox">Dewalt</inpput>
-              <input type="checkbox">Hitachi</inpput>
+              <label><input type="checkbox"> Bosch</label>
+              <label><input type="checkbox"> Интерскол</label> 
+              <label><input type="checkbox"> Makita</label>
+              <label><input type="checkbox"> Dewalt</label> 
+              <label><input type="checkbox"> Hitachi</label> 
             </fieldset>
 
             <fieldset class="filter-power">
                 <legend>Питание:</legend>
-                <input type="radio">Аккумуляторные</inpput>
-                <input type="radio">Сетевые</inpput>
+                <label><input type="radio" name="power" value="battery"> Аккумуляторные</label> 
+                <label><input type="radio" name="power" value="electrical"> Сетевые</label>
               </fieldset>
 
             <button type="submit">Показать</button>
         </form>
+      </section>
+
+      <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
+
+      <section>
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный млоток и ударная дрель</p>
       </section>
     </main>
 
