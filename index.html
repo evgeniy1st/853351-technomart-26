@@ -188,11 +188,14 @@
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
         <div>
-          <ul>
-            <li><button>Доставка</button></li>
-            <li><button>Гарантия</button></li>
-            <li><button>Кредит</button></li>
-          </ul>
+          <input type="radio" class="visually-hidden" name="services-toggle" id="services-btn-1">
+          <input type="radio" class="visually-hidden" name="services-toggle" id="services-btn-2">
+          <input type="radio" class="visually-hidden" name="services-toggle" id="services-btn-3">
+          <div class="services-slider-controls">
+            <label for="services-btn-1">Доставка</label>
+            <label for="services-btn-2">Гарантия</label>
+            <label for="services-btn-3">Кредит</label>
+          </div>
 
           <div>
             <div>
@@ -296,7 +299,8 @@
     </div>
   </footer>
 
-  <div class="modal-feedback">
+  <section class="modal-feedback">
+    <h2 class="visually-hidden">Обратная связь</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
     <fieldset>
       <legend class="visually-hidden">Форма обратной связи</legend>
@@ -316,16 +320,17 @@
     <button type="submit">Отправить</button>
   </form>
   <button type="button"><span class="visually-hidden">Закрыть</span></button>
-  </div>
-  <div class="modal-map">
+  </section>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Наше положение на карте</h2>
     <img src="img/map.png" width="940" height="446" alt="Санкт-Петербург Конюшенная 19/8">
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
-  </div>
-  <div class="modal-add-cart">
+  </section>
+  <section class="modal-add-cart">
     <h4>Товар добавлен в корзину!</h4>
     <a href="#">Оформить заказ</a>
     <button type="button"><span class="visually-hidden">Закрыть</span></button>
-  </div>
+  </section>
 
 </body>
 
