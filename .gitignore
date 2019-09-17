@@ -5,7 +5,10 @@
 *.log
 *.pdf
 *.psd
+*.map
 *.sublime*
 node_modules/
+sass/
 npm-debug.*
 Thumbs.db
+.csscomb.json
