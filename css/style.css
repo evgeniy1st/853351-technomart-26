@@ -127,7 +127,7 @@ body img {
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
-  line-height: 1.44;
+  line-height: 23px;
 
   color: #ee3643;
 }
@@ -143,17 +143,6 @@ body img {
   font-weight: normal;
 
   color: #32425c;
-}
-
-.profile-name {
-  font-size: 21px;
-  font-weight: normal;
-
-  color: #000000;
-}
-
-.profile-name:active {
-  color: rgba(0, 0, 0, .3);
 }
 
 .profile-extra a {
@@ -200,6 +189,8 @@ body img {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
+
+  text-transform: uppercase;
 
   color: #000000;
 }
@@ -267,6 +258,8 @@ body img {
 }
 
 .btn-buy {
+  text-transform: uppercase;
+
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -280,6 +273,8 @@ body img {
 }
 
 .btn-wishlist {
+  text-transform: uppercase;
+
   color: #32425c;
   border: 3px solid #63a63e;
   background-color: #ffffff;
@@ -406,14 +401,16 @@ body img {
 .product-description {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.85;
+  line-height: 24px;
 
   background-color: #f4f7f9;
 }
 
 .product-description h2 {
   font-size: 30px;
-  line-height: 1;
+  line-height: 30px;
+
+  text-transform: uppercase;
 }
 
 .footer-logo {
@@ -577,8 +574,19 @@ a.sc-icon:active {
 .header-info-auth a {
   font-size: 21px;
 
-  color: #000000;
+  color: #32425c;
   background-color: #ffffff;
+}
+
+a.profile-name {
+  font-size: 21px;
+  font-weight: normal;
+
+  color: #000000;
+}
+
+a.profile-name:active {
+  color: rgba(0, 0, 0, .3);
 }
 
 .promo-section h3 {
@@ -598,6 +606,8 @@ a.sc-icon:active {
 }
 
 .promo-btn {
+  text-transform: uppercase;
+
   color: #ffffff;
   background-color: rgba(0, 0, 0, .1);
 }
@@ -692,6 +702,7 @@ a.sc-icon:active {
 
 .section-header h2 {
   font-size: 30px;
+  font-weight: normal;
 
   text-transform: uppercase;
 
@@ -714,8 +725,7 @@ a.sc-icon:active {
 .section-servises {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.85;
-  line-height: 1;
+  line-height: 24px;
 
   color: #000000;
   background-color: #f4f7f9;
@@ -724,6 +734,8 @@ a.sc-icon:active {
 .section-servises h2 {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
 
   text-transform: uppercase;
 
@@ -733,7 +745,7 @@ a.sc-icon:active {
 .section-servises h3 {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 36px;
-  line-height: 1;
+  line-height: 36px;
 
   text-transform: uppercase;
 
@@ -744,7 +756,7 @@ a.sc-icon:active {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
-  line-height: 1.43;
+  line-height: 21px;
 
   color: #ffffff;
   background-color: #32425c;
@@ -782,7 +794,7 @@ a.sc-icon:active {
 .service-credit a {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 14px;
 
   text-transform: uppercase;
 
@@ -793,7 +805,7 @@ a.sc-icon:active {
 .company {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.85;
+  line-height: 24px;
 
   color: #000000;
 }
@@ -801,7 +813,7 @@ a.sc-icon:active {
 .company h2 {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
-  line-height: 1;
+  line-height: 30px;
 
   text-transform: uppercase;
 }
@@ -813,13 +825,13 @@ a.sc-icon:active {
 .logistic-company {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.11;
+  line-height: 20px;
 }
 
 .company-about a {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 18px;
 
   text-transform: uppercase;
 
@@ -842,7 +854,7 @@ a.sc-icon:active {
 .write-us {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.29;
+  line-height: 18px;
 
   text-transform: uppercase;
 
@@ -883,7 +895,7 @@ a.sc-icon:active {
 .modal-feedback fieldset textarea::-webkit-input-placeholder {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.38;
+  line-height: 18px;
 
   color: #999999;
 }
@@ -892,7 +904,7 @@ a.sc-icon:active {
 .modal-feedback fieldset textarea:-ms-input-placeholder {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.38;
+  line-height: 18px;
 
   color: #999999;
 }
@@ -901,7 +913,7 @@ a.sc-icon:active {
 .modal-feedback fieldset textarea::-ms-input-placeholder {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.38;
+  line-height: 18px;
 
   color: #999999;
 }
@@ -910,7 +922,7 @@ a.sc-icon:active {
 .modal-feedback fieldset textarea::placeholder {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.38;
+  line-height: 18px;
 
   color: #999999;
 }
