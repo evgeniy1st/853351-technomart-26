@@ -37,9 +37,14 @@ main {
 
 .main-header {
   width: 1200px;
+  margin-bottom: 60px;
   padding-bottom: 59px;
 
   background-color: #f4f7f9;
+}
+
+.main-header.catalog-page {
+  margin-bottom: 0;
 }
 
 .main-header ul {
@@ -74,7 +79,11 @@ main {
 
   display: inline-block;
 
-  padding: 14px 55px;
+  width: 220px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  text-align: center;
 
   background-color: #ee3643;
   -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
@@ -165,7 +174,11 @@ main {
 .extra-navigation-link.buy {
   display: inline-block;
 
-  padding: 13px 21px;
+  width: 151px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+
+  text-align: center;
 
   background-color: #63a63e;
 }
@@ -182,16 +195,18 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 45px;
+  padding-top: 46px;
   padding-right: 130px;
-  padding-bottom: 25px;
-  padding-left: 183px;
+  padding-bottom: 24px;
+  padding-left: 182px;
 }
 
 .header-info-text {
@@ -203,12 +218,17 @@ main {
   width: 196px;
   margin-top: 0;
   margin-right: 71px;
+  padding-top: 3px;
 
   color: #ee3643;
 }
 
 .header-info-contacts {
   width: 271px;
+  margin-right: 69px;
+}
+
+.header-info-contacts.catalog-page {
   margin-right: 64px;
 }
 
@@ -219,10 +239,10 @@ main {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 12px;
-  padding-right: 52px;
+  padding-top: 10px;
+  padding-right: 48px;
   padding-bottom: 12px;
-  padding-left: 68px;
+  padding-left: 72px;
 
   color: #e9292a;
   border: 3px solid #ffffff;
@@ -235,7 +255,7 @@ main {
   display: inline-block;
 
   padding: 10px;
-  padding-top: 5px;
+  padding-top: 7px;
 
   color: #32425c;
 }
@@ -262,6 +282,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -273,7 +295,10 @@ main {
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  padding: 22px 53px;
+  padding-top: 20px;
+  padding-right: 53px;
+  padding-bottom: 23px;
+  padding-left: 52px;
 
   color: #ffffff;
   background-color: #32425c;
@@ -395,11 +420,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  margin-top: 59px;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -447,9 +473,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 
   margin: 0;
   padding: 0;
@@ -458,8 +484,9 @@ main {
 }
 
 .product-item {
-  width: 220px;
-  min-height: 318px;
+  width: 218px;
+  min-height: 316px;
+  margin-right: 20px;
   margin-bottom: 20px;
 
   border: solid 1px #eaeaea;
@@ -471,6 +498,14 @@ main {
   font-weight: bold;
 
   margin: 0;
+}
+
+.product-item.catalog-product:nth-child(3n) {
+  margin-right: 0;
+}
+
+.product-item.index-product:nth-child(4n) {
+  margin-right: 0;
 }
 
 .product-wrap {
@@ -558,7 +593,7 @@ main {
 }
 
 .filter-section {
-  margin-right: 14px;
+  margin-right: 26px;
 }
 
 .filter-section fieldset {
@@ -1202,6 +1237,8 @@ a.my-orders-login {
   -webkit-box-align: center;
   align-items: center;
   -ms-flex-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1209,12 +1246,11 @@ a.my-orders-login {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-height: 89px;
-  margin-top: 25px;
-  margin-bottom: 18px;
-  padding-top: 25px;
+  margin-bottom: 21px;
+  padding-top: 26px;
   padding-right: 24px;
   padding-bottom: 25px;
-  padding-left: 30px;
+  padding-left: 29px;
 
   background-color: #f9f5f0;
 }
@@ -1235,8 +1271,11 @@ a.my-orders-login {
 
   display: inline-block;
 
-  padding: 14px 55px;
+  min-width: 252px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
+  text-align: center;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1247,16 +1286,14 @@ a.my-orders-login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-align: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 
   margin: 0;
+  margin-bottom: 65px;
   padding: 0;
 
   list-style: none;
@@ -1277,9 +1314,14 @@ a.my-orders-login {
   box-sizing: border-box;
   width: 220px;
   height: 145px;
+  margin-right: 20px;
   margin-bottom: 20px;
 
   border: solid 1px #eaeaea;
+}
+
+.manufacturer-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .section-servises {
@@ -1292,9 +1334,9 @@ a.my-orders-login {
   width: 1200px;
   min-height: 522px;
   margin-right: auto;
-  margin-bottom: 82px;
+  margin-bottom: 78px;
   margin-left: auto;
-  padding-top: 68px;
+  padding-top: 65px;
   padding-right: 130px;
   padding-left: 130px;
 
@@ -1309,6 +1351,7 @@ a.my-orders-login {
   line-height: 30px;
 
   margin: 0;
+  margin-bottom: 25px;
 
   text-transform: uppercase;
 
@@ -1329,7 +1372,8 @@ a.my-orders-login {
 
 .section-servises-description {
   width: 398px;
-  margin-bottom: 74px;
+  margin-top: 0;
+  margin-bottom: 67px;
 }
 
 .servises-wrapper {
@@ -1359,10 +1403,11 @@ a.my-orders-login {
   font-weight: bold;
   line-height: 21px;
 
-  width: 240px;
+  min-width: 218px;
   margin: 0;
   padding-top: 21px;
   padding-bottom: 21px;
+  padding-left: 22px;
 
   color: #ffffff;
   background-color: #32425c;
@@ -1384,8 +1429,13 @@ a.my-orders-login {
 
 .service-item h3 {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
   padding: 0;
+}
+
+.service-item p {
+  width: 278px;
+  margin: 0;
 }
 
 .service-item.hide-tab {
@@ -1434,7 +1484,7 @@ a.my-orders-login {
   box-sizing: border-box;
   width: 940px;
   margin-right: auto;
-  margin-bottom: 85px;
+  margin-bottom: 86px;
   margin-left: auto;
 
   color: #000000;
