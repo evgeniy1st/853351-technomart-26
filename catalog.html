@@ -21,17 +21,17 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="searchField">Поиск по сайту</label>
           <input type="search" name="search" id="searchField" placeholder="Поиск:">
-          <button type="submit" aria-label="Найти"></button>
+          <button class="visually-hidden" type="submit" aria-label="Найти"></button>
         </form>
-        <a class="extra-navigation-link" href="#">Закладки</a>
-        <a class="extra-navigation-link cart cart-full" href="#">Корзина</a>
+        <a class="extra-navigation-link bookmarks" href="#">Закладки:</a>
+        <a class="extra-navigation-link cart cart-full" href="#">Корзина:</a>
         <a class="extra-navigation-link buy" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="header-info">
       <p class="header-info-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <div class="header-info-contacts catalog-page">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       </div>
       <div class="header-info-auth">
@@ -75,7 +75,7 @@
   <main>
     <h1 class="visually-hidden">Каталог перфораторов</h1>
     <ul class="breadcrumbs" aria-label="путь до текущей страницы">
-      <li><a href="#"><span class="visually-hidden">Главная</span></a></li>
+      <li><a class="breadcrumbs-home" href="#"><span class="visually-hidden">Главная</span></a></li>
       <li><a href="#">Каталог</a></li>
       <li><a href="#">Инструмент</a></li>
       <li><a href="#">Перфораторы</a></li>
@@ -236,6 +236,13 @@
             <p class="filter-title">Фильтр</p>
             <fieldset class="filter-price">
               <legend class="filter-subtitle">Цена:</legend>
+              <div class="range-wrap">
+                <div class="range-line">
+                  <div class="range-bubble bubble-min"><span class="range-dot dot-min"></span></div>
+                  <div class="range-line-active"></div>
+                  <div class="range-bubble bubble-max"><span class="range-dot dot-max"></span></div>
+                </div>
+              </div>
               <input class="filter-price-field" type="text" value="0" name="price-min">
               <span>-</span>
               <input class="filter-price-field" type="text" value="3000" name="price-max">
@@ -245,33 +252,40 @@
             <fieldset class="filter-manufacturer">
               <legend class="filter-subtitle">Производители:</legend>
               <ul>
-                <li><label class="label-manufacturer"><input class="visually-hidden" type="checkbox"
-                      name="filter-bosch">
-                    Bosch</label></li>
-                <li><label class="label-manufacturer"><input class="visually-hidden" type="checkbox"
-                      name="filter-interskol">
-                    Интерскол</label></li>
-                <li><label class="label-manufacturer"><input class="visually-hidden" type="checkbox"
-                      name="filter-makita">
-                    Makita</label></li>
-                <li><label class="label-manufacturer"><input class="visually-hidden" type="checkbox"
-                      name="filter-dewalt">
-                    Dewalt</label></li>
-                <li><label class="label-manufacturer"><input class="visually-hidden" type="checkbox"
-                      name="filter-hitachi">
-                    Hitachi</label></li>
+                <li>
+                  <input class="visually-hidden checkbox-manufacturer" type="checkbox" name="filter-bosch" id="bosch">
+                  <label for="bosch" class="label-manufacturer">Bosch</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-manufacturer" type="checkbox" name="filter-interskol" id="interskol">
+                  <label for="interskol" class="label-manufacturer">Интерскол</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-manufacturer" type="checkbox" name="filter-makita" id="makita">
+                  <label for="makita" class="label-manufacturer">Makita</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-manufacturer" type="checkbox" name="filter-dewalt" id="dewalt">
+                  <label for="dewalt" class="label-manufacturer">Dewalt</label>
+                </li>
+                <li>
+                  <input class="visually-hidden checkbox-manufacturer" type="checkbox" name="filter-hitachi" id="hitachi">
+                  <label for="hitachi" class="label-manufacturer">Hitachi</label>
+                </li>
               </ul>
             </fieldset>
 
             <fieldset class="filter-power">
               <legend class="filter-subtitle">Питание:</legend>
               <ul>
-                <li><label class="label-power"><input class="visually-hidden" type="radio" name="power" value="battery">
-                    Аккумуляторные</labelcl>
+                <li>
+                  <input class="visually-hidden radio-power" type="radio" name="power" value="battery" id="battery">
+                  <label for="battery" class="label-power">Аккумуляторные</label>
                 </li>
-                <li><label class="label-power"><input class="visually-hidden" type="radio" name="power"
-                      value="electrical">
-                    Сетевые</label></li>
+                <li>
+                  <input class="visually-hidden radio-power" type="radio" name="power" value="electrical" id="electrical">
+                  <label for="electrical" class="label-power">Сетевые</label>
+                  </li>
               </ul>
             </fieldset>
 
