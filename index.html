@@ -86,31 +86,24 @@
         </ul>
         <div class="promo-wrapper">
           <div class="slider">
-            <div class="slide-drill">
-              <h3>Дрели</h3>
-              <span>Соседям на радость</span>
-              <button class="slide-control slide-control-right" type="button"><span class="visually-hidden">Следующий
-                  слайд</span></button>
-              <button class="slide-control slide-control-left" type="button"><span class="visually-hidden">Предыдущий
-                  слайд</span></button>
-              <a class="slider-btn" href="catalog.html">открыть каталог</a>
-              <input type="radio" name="slider-dot" value="one" id="slider-dot-one">
-              <label for="slider-dot-one"></label>
-              <input type="radio" name="slider-dot" value="two" id="slider-dot-two">
-              <label for="slider-dot-two"></label>
+            <div class="slide slide-drill">
+              <h3 class="slide-title">Дрели</h3>
+              <span class="slide-text">Соседям на радость</span>
             </div>
-            <div class="slide-perf slide-hidden">
-              <h3>Перфораторы</h3>
-              <span>Настоящие мужские игрушки</span>
+            <div class="slide slide-perf">
+              <h3 class="slide-title">Перфораторы</h3>
+              <span class="slide-text">Настоящие мужские игрушки</span>
+            </div>
+            <div class="slider-controls">
               <button class="slide-control slide-control-right" type="button"><span class="visually-hidden">Следующий
                   слайд</span></button>
               <button class="slide-control slide-control-left" type="button"><span class="visually-hidden">Предыдущий
                   слайд</span></button>
               <a class="slider-btn" href="catalog.html">открыть каталог</a>
-              <input type="radio" name="slider-dot" value="one" id="slider-dot-one">
-              <label for="slider-dot-one"></label>
-              <input type="radio" name="slider-dot" value="two" id="slider-dot-two">
-              <label for="slider-dot-two"></label>
+              <div class="slider-dotset">
+                <span class="slider-dot"></span>
+                <span class="slider-dot"></span>
+              </div>
             </div>
           </div>
           <ul class="promo-extra">
@@ -222,7 +215,7 @@
           <input type="radio" class="visually-hidden" name="services-toggle" id="services-btn-2">
           <input type="radio" class="visually-hidden" name="services-toggle" id="services-btn-3">
           <div class="services-slider-controls">
-            <label class="servises-tab active-tab" for="services-btn-1">Доставка</label>
+            <label class="servises-tab" for="services-btn-1">Доставка</label>
             <label class="servises-tab" for="services-btn-2">Гарантия</label>
             <label class="servises-tab" for="services-btn-3">Кредит</label>
           </div>
@@ -232,13 +225,13 @@
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж!</p>
             </div>
-            <div class="service-item service-guarantee hide-tab">
+            <div class="service-item service-guarantee">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
                 возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
                 уж восстановите как-нибудь сами.</p>
             </div>
-            <div class="service-item service-credit hide-tab">
+            <div class="service-item service-credit">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               <a href="#">Отправить заявку</a>
@@ -355,7 +348,7 @@
         <button type="submit">Отправить</button>
       </div>
     </form>
-    <button type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
   <section class="modal-map">
     <h2 class="visually-hidden">Наше положение на карте</h2>
@@ -371,6 +364,7 @@
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

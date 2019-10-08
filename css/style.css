@@ -84,6 +84,7 @@ main {
   padding-bottom: 12px;
 
   text-align: center;
+  vertical-align: middle;
 
   background-color: #ee3643;
   -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
@@ -184,6 +185,7 @@ main {
   height: 16px;
 
   content: '';
+  vertical-align: middle;
 
   opacity: .5;
   background-image: url('../img/icon-bookmark.svg');
@@ -205,6 +207,7 @@ main {
   height: 16px;
 
   content: '';
+  vertical-align: middle;
 
   opacity: .5;
   background-image: url('../img/icon-cart-small.svg');
@@ -228,6 +231,7 @@ main {
   padding-bottom: 13px;
 
   text-align: center;
+  vertical-align: middle;
 
   background-color: #ee3643;
 }
@@ -240,6 +244,7 @@ main {
   padding-bottom: 13px;
 
   text-align: center;
+  vertical-align: middle;
 
   background-color: #63a63e;
 }
@@ -325,6 +330,8 @@ main {
   padding: 10px;
   padding-top: 7px;
 
+  vertical-align: middle;
+
   color: #32425c;
 }
 
@@ -363,16 +370,18 @@ main {
   margin-right: auto;
   margin-left: auto;
   padding: 0;
-  padding-top: 20px;
-  padding-right: 53px;
-  padding-bottom: 23px;
-  padding-left: 52px;
 
   color: #ffffff;
   background-color: #32425c;
 }
 
 .main-navigation a {
+  display: inline-block;
+
+  padding: 18px 31px;
+
+  vertical-align: middle;
+
   color: #ffffff;
 }
 
@@ -417,6 +426,7 @@ main {
   height: 12px;
 
   content: '';
+  vertical-align: middle;
 
   background-image: url('../img/icon-right-small.svg');
   background-repeat: no-repeat;
@@ -437,6 +447,8 @@ main {
 
   width: 14px;
   height: 12px;
+
+  vertical-align: middle;
 
   background-image: url('../img/icon-home.svg');
 }
@@ -703,6 +715,7 @@ main {
   height: 15px;
 
   content: '';
+  vertical-align: middle;
 
   opacity: .5;
   background-image: url('../img/icon-cart-small.svg');
@@ -785,6 +798,7 @@ main {
 
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  vertical-align: middle;
 
   color: #ffffff;
   background-color: #ee3643;
@@ -940,6 +954,7 @@ main {
 
   content: '';
   cursor: pointer;
+  vertical-align: middle;
 
   background-image: url('../img/checkbox-off.svg');
   background-repeat: no-repeat;
@@ -957,6 +972,7 @@ main {
 
   content: '';
   cursor: pointer;
+  vertical-align: middle;
 
   background-image: url('../img/radio-off.svg');
   background-repeat: no-repeat;
@@ -1146,6 +1162,7 @@ a.footer-logo {
   padding-bottom: 19px;
 
   text-align: center;
+  vertical-align: middle;
 }
 
 .footer-secondary-navigation {
@@ -1263,6 +1280,8 @@ a.sc-icon {
   width: 42px;
   height: 42px;
 
+  vertical-align: middle;
+
   border: none;
   border-radius: 50%;
   background-color: #212a3a;
@@ -1332,6 +1351,15 @@ a.sc-icon:active {
 }
 
 .modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 20px;
+  height: 20px;
+
+  border: none;
+  background-color: transparent;
   background-image: url('../img/icon-close.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -1346,6 +1374,8 @@ a.sc-icon:active {
   padding-right: 25px;
   padding-bottom: 14px;
   padding-left: 25px;
+
+  vertical-align: middle;
 
   color: #32425c;
   background-color: #ffffff;
@@ -1363,6 +1393,7 @@ a.login-btn {
   height: 17px;
 
   content: '';
+  vertical-align: middle;
 
   background-image: url('../img/icon-login.svg');
   background-repeat: no-repeat;
@@ -1390,6 +1421,7 @@ a.profile-name:active {
   height: 18px;
 
   content: '';
+  vertical-align: middle;
 
   background-image: url('../img/icon-user.svg');
   background-repeat: no-repeat;
@@ -1421,6 +1453,7 @@ a.my-orders-login {
   height: 4px;
 
   content: '';
+  vertical-align: middle;
 
   border-radius: 50%;
   background-color: #32425c;
@@ -1462,8 +1495,63 @@ a.my-orders-login {
   margin-bottom: 53px;
 }
 
-.slide-hidden {
+.slide {
   display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide-control {
+  position: absolute;
+
+  display: inline-block;
+
+  width: 22px;
+  height: 40px;
+  padding: 3px;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.slide-control:focus {
+  -webkit-box-shadow: 0 0 3px rgba(26, 83, 168, .5);
+  box-shadow: 0 0 3px rgba(26, 83, 168, .5);
+}
+
+.slide-control-right {
+  top: -168px;
+  right: 10px;
+
+  background-image: url(../img/icon-right.svg);
+}
+
+.slide-control-right:hover {
+  opacity: .7;
+}
+
+.slide-control-right:active {
+  opacity: .3;
+}
+
+.slide-control-left {
+  top: -168px;
+  left: 10px;
+
+  background-image: url(../img/icon-left.svg);
+}
+
+.slide-control-left:hover {
+  opacity: .7;
+}
+
+.slide-control-left:active {
+  opacity: .3;
 }
 
 .promo-btn {
@@ -1474,6 +1562,7 @@ a.my-orders-login {
   padding-bottom: 8px;
 
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1527,13 +1616,22 @@ a.my-orders-login {
   font-weight: bold;
 
   margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .slider span {
   font-size: 18px;
+
+  display: inline-block;
+
+  padding-left: 10px;
 }
 
 .slider div {
+  position: relative;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1556,6 +1654,12 @@ a.my-orders-login {
 .slider-btn {
   font-size: 14px;
 
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+
+  padding: 10px 20px;
+
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1568,6 +1672,33 @@ a.my-orders-login {
 
 .slider-btn:active {
   background-color: #ba2732;
+}
+
+.slider-dotset {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+}
+
+.slider-dot {
+  display: inline-block;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.slider-dot.active {
+  padding: 0;
+
+  border: 2.5px solid #ffffff;
+  background-color: red;
 }
 
 .promo-extra {
@@ -1616,6 +1747,7 @@ a.my-orders-login {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   text-align: center;
+  vertical-align: middle;
 
   color: #ffffff;
   background-color: #ee3643;
@@ -1667,6 +1799,7 @@ a.my-orders-login {
   padding-bottom: 10px;
 
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1808,12 +1941,14 @@ a.my-orders-login {
   background-color: #293449;
 }
 
-.servises-tab.active-tab {
+.servises-tab.active {
   color: #32425c;
   background-color: #ffffff;
 }
 
 .service-item {
+  display: none;
+
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -1829,8 +1964,8 @@ a.my-orders-login {
   margin: 0;
 }
 
-.service-item.hide-tab {
-  display: none;
+.service-item.active {
+  display: block;
 }
 
 .service-delivery {
@@ -1929,6 +2064,7 @@ a.my-orders-login {
   padding-bottom: 8px;
 
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1961,6 +2097,8 @@ a.my-orders-login {
   display: inline-block;
 
   margin-top: -5px;
+
+  vertical-align: middle;
 }
 
 .write-us {
@@ -1976,6 +2114,7 @@ a.my-orders-login {
   padding-bottom: 8px;
 
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
 
   color: #ffffff;
@@ -1991,7 +2130,28 @@ a.my-orders-login {
 }
 
 .modal-feedback {
+  position: fixed;
+  z-index: 10;
+  top: 100px;
+  left: calc(50% - 310px);
+
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  width: 620px;
+  min-height: 430px;
+  padding-right: 80px;
+  padding-left: 80px;
+
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
 }
 
 .modal-feedback fieldset {
