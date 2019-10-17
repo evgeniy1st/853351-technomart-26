@@ -85,3 +85,70 @@ function removeActiveService() {
 }
 
 // end serviceSlider
+
+// modalfeedback
+
+var buttonWriteUs = document.querySelector('.write-us')
+var modalfeedback = document.querySelector('.modal-feedback')
+var modalfeedbackOverlay = document.querySelector('.modal-wrap')
+var btnCloseModalfeedback = document.querySelector('.modal-feedback .modal-close')
+var inputName =  modalfeedback.querySelector('[name = modal-feedback-name]')
+var form = modalfeedback.querySelector('form')
+
+buttonWriteUs.addEventListener('click', function(event) {
+    event.preventDefault();
+    modalfeedback.classList.add('active');
+    inputName.focus();
+})
+
+btnCloseModalfeedback.addEventListener('click', function(event) {
+    event.preventDefault();
+    modalfeedback.classList.remove('active');
+})
+
+form.addEventListener('submit', function (event) {
+  eventt.preventDefault();
+});
+
+
+
+// карта
+
+var smallMap = document.querySelector('.company-contacts img')
+var modalmap = document.querySelector('.modal-map')
+var modalmapOverlay = document.querySelector('.modal-wrap-map')
+var btnCloseModalmap = document.querySelector('.modal-map .map-close')
+
+smallMap.addEventListener('click', function (event) {
+  event.preventDefault();
+  modalmap.classList.add('active');
+})
+
+btnCloseModalmap.addEventListener('click', function (event) {
+  event.preventDefault();
+  modalmap.classList.remove('active');
+})
+
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+      center: [59.9385, 30.3181],
+      zoom: 15,
+      controls: []
+    }, {
+        suppressMapOpenBlock: true
+    }),
+
+    myGeoObject = new ymaps.GeoObject({
+      geometry: {
+        type: "Point",
+        coordinates: [59.9382, 30.3228]
+      }
+    }, {
+      preset: 'islands#redDotIcon'
+    });
+
+  myMap.geoObjects
+    .add(myGeoObject)
+}

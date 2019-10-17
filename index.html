@@ -326,21 +326,22 @@
     </div>
   </footer>
 
+  <div class="modal-wrap">
   <section class="modal-feedback">
     <h2 class="visually-hidden">Обратная связь</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend class="visually-hidden">Форма обратной связи</legend>
         <label>
-          Ваше имя:
+          Ваше имя:<br>
           <input type="text" placeholder="Имя Фамилия" name="modal-feedback-name">
         </label>
         <label>
-          Ваш e-mail:
+          Ваш e-mail:<br>
           <input type="email" placeholder="email@example.com" name="modal-feedback-email">
         </label>
         <label>
-          Текст письма:
+          Текст письма:<br>
           <textarea placeholder="В свободной форме" name="modal-feedback-text"></textarea>
         </label>
       </fieldset>
@@ -350,11 +351,16 @@
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  </div>
+
+  <div class="modal-wrap-map">
   <section class="modal-map">
     <h2 class="visually-hidden">Наше положение на карте</h2>
+    <div id="map"></div>
     <img src="img/map.png" width="940" height="446" alt="Санкт-Петербург Конюшенная 19/8">
-    <button type="button"><span class="visually-hidden">Закрыть</span></button>
+    <button class="map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
+  </div>
   <section class="modal-add-cart">
     <h2>Товар добавлен в корзину!</h2>
     <div class="btnset">
@@ -364,6 +370,7 @@
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<1657ccbe-52b7-475f-878f-55a3fee624cc>" type="text/javascript"></script>
   <script src="js/script.js"></script>
 </body>
 

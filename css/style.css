@@ -1341,7 +1341,7 @@ a.sc-icon:active {
   background-color: #ee3643;
 }
 
-.btnset button {
+.btnset .map-close {
   font-size: 14px;
 
   text-transform: uppercase;
@@ -2146,17 +2146,58 @@ a.my-orders-login {
 
   width: 620px;
   min-height: 430px;
-  padding-right: 80px;
-  padding-left: 80px;
 
+  border-top: 7px solid #ee3643;
   background-color: #ffffff;
   -webkit-box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
 }
 
+.modal-feedback.active {
+  display: block;
+}
+
+.modal-feedback form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  min-height: 430px;
+  padding-bottom: 50px;
+}
+
 .modal-feedback fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 620px;
+  min-height: 300px;
+  padding-right: 80px;
+  padding-left: 80px;
+
   border: none;
-  border-top: 7px solid #ee3643;
 }
 
 .modal-feedback fieldset label {
@@ -2217,6 +2258,10 @@ a.my-orders-login {
   border-color: #ee3643;
 }
 
+.modal-feedback fieldset input {
+  width: 220px;
+}
+
 .btn-wraper {
   background-color: #f1f1f1;
 }
@@ -2231,5 +2276,38 @@ a.my-orders-login {
 }
 
 .modal-map {
+  position: fixed;
+  z-index: 15;
+  top: 100px;
+  left: calc(50% - 470px);
+
   display: none;
+}
+
+.modal-map.active {
+  display: block;
+}
+
+div#map {
+  position: absolute;
+
+  width: 940px;
+  min-height: 450px;
+}
+
+.modal-map button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 21px;
+  height: 21px;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/icon-close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
