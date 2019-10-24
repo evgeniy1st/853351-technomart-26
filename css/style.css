@@ -214,21 +214,53 @@ main {
   background-repeat: no-repeat;
 }
 
+a.extra-navigation-link.bookmarks {
+  display: inline-block;
+
+  margin-right: 20px;
+  padding-top: 12px;
+  padding-right: 21px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+}
+
+a.extra-navigation-link.bookmarks-for-cart-full {
+  margin-right: 0;
+}
+
 .extra-navigation-link.cart::after {
   content: ' 0';
+}
+
+.extra-navigation-link.cart-full::after {
+  content: ' 10';
 }
 
 .extra-navigation-link.cart:hover::before {
   opacity: 1;
 }
 
-.extra-navigation-link.cart-full {
+a.extra-navigation-link.cart {
   display: inline-block;
 
-  width: 151px;
+  margin-right: 10px;
+  padding-top: 12px;
+  padding-right: 21px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+}
+
+a.extra-navigation-link.cart-full {
+  display: inline-block;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0;
   margin-left: auto;
   padding-top: 12px;
-  padding-bottom: 13px;
+  padding-right: 26px;
+  padding-bottom: 12px;
+  padding-left: 36px;
 
   text-align: center;
   vertical-align: middle;
@@ -302,7 +334,7 @@ main {
 }
 
 .header-info-contacts.catalog-page {
-  margin-right: 43px;
+  margin-right: 20px;
 }
 
 .header-info-contacts a {
@@ -1151,18 +1183,23 @@ main {
 
   width: 547px;
   padding: 0;
-  padding-top: 21px;
+  padding-top: 22px;
 }
 
 a.footer-logo {
   display: inline-block;
 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 220px;
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 22px;
 
   text-align: center;
   vertical-align: middle;
+
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .24);
 }
 
 .footer-secondary-navigation {
@@ -1175,10 +1212,11 @@ a.footer-logo {
 }
 
 .footer-secondary-navigation p {
-  line-height: 22px;
+  line-height: 23px;
 
   width: 323px;
-  padding-top: 6px;
+  padding-top: 3px;
+  padding-left: 3px;
 }
 
 .footer-secondary-navigation ul {
@@ -1191,7 +1229,7 @@ a.footer-logo {
 
   width: 524px;
   padding: 0;
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .footer-secondary-navigation ul a {
@@ -1244,16 +1282,33 @@ a.footer-logo {
 }
 
 .copyright {
-  width: 222px;
+  width: 228px;
   margin: 0;
   padding: 0;
-  padding-top: 39px;
+  padding-top: 38px;
+  padding-left: 2px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  width: 171px;
+  padding-left: 2px;
 }
 
 .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1272,6 +1327,10 @@ a.footer-logo {
 
   width: 300px;
   padding-top: 22px;
+}
+
+.footer-extra p:first-child {
+  margin-right: 51px;
 }
 
 a.sc-icon {
@@ -1399,7 +1458,7 @@ a.sc-icon:active {
   display: inline-block;
 
   padding-top: 14px;
-  padding-right: 25px;
+  padding-right: 22px;
   padding-bottom: 14px;
   padding-left: 25px;
 
@@ -1407,6 +1466,10 @@ a.sc-icon:active {
 
   color: #32425c;
   background-color: #ffffff;
+}
+
+.header-info-auth.auth-active {
+  margin-left: 0;
 }
 
 a.login-btn {
@@ -1431,9 +1494,12 @@ a.profile-name {
   font-size: 21px;
   font-weight: normal;
 
+  position: relative;
+
   margin-bottom: 5px;
+  margin-left: 31px;
   padding-right: 10px;
-  padding-left: 34px;
+  padding-left: 47px;
 
   color: #000000;
 }
@@ -1443,6 +1509,10 @@ a.profile-name:active {
 }
 
 .profile-name::before {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
   display: inline-block;
 
   width: 20px;
@@ -1456,13 +1526,21 @@ a.profile-name:active {
 }
 
 .profile-exit {
+  margin-bottom: 5px;
+  margin-left: -4px;
+  padding-top: 28px;
+  padding-right: 31px;
+  padding-bottom: 18px;
+
   background-image: url('../../img/icon-logout.svg');
   background-repeat: no-repeat;
+  background-position: 26px 14px;
 }
 
 a.my-orders-login,
 a.my-cabinet-login {
   font-size: 16px;
+  line-height: 13px;
 
   padding: 0;
 
@@ -1470,11 +1548,17 @@ a.my-cabinet-login {
 }
 
 a.my-orders-login {
-  margin-right: 28px;
-  margin-left: 4px;
+  position: relative;
+
+  margin-right: 27px;
+  margin-left: 5px;
 }
 
 .my-orders-login::after {
+  position: absolute;
+  top: 5px;
+  right: -19px;
+
   display: inline-block;
 
   width: 4px;
@@ -1984,8 +2068,11 @@ a.my-orders-login {
 .service-item {
   display: none;
 
+  width: 750px;
+  min-height: 285px;
+
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: 151px 26px;
 }
 
 .service-item h3 {
@@ -2058,6 +2145,7 @@ a.my-orders-login {
 
   margin: 0;
 
+  letter-spacing: -1px;
   text-transform: uppercase;
 }
 
@@ -2069,17 +2157,32 @@ a.my-orders-login {
 
 .company p {
   margin: 0;
-  padding-top: 25px;
+  padding-top: 27px;
+
+  letter-spacing: .1px;
 }
 
 .logistic-company {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
+
+  position: relative;
 }
 
 .logistic-company::before {
-  content: '\2014';
+  position: absolute;
+  top: 17px;
+  left: 0;
+
+  display: inline-block;
+
+  width: 25px;
+
+  content: '';
+  vertical-align: middle;
+
+  border-bottom: 2px solid #ee3643;
 }
 
 .company-about {
@@ -2095,14 +2198,15 @@ a.my-orders-login {
 
   width: 220px;
   margin-top: 10px;
-  padding-top: 13px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
 
   color: #ffffff;
+  border-radius: 3px;
   background-color: #ee3643;
 }
 
@@ -2114,9 +2218,17 @@ a.my-orders-login {
   background-color: #ba2732;
 }
 
+p.logistic-description {
+  width: 430px;
+  padding-top: 23px;
+
+  letter-spacing: .15px;
+}
+
 .logistic-company {
-  padding-top: 7px;
+  padding-top: 7.5px;
   padding-bottom: 13px;
+  padding-left: 36px;
 }
 
 .company-contacts {
@@ -2124,7 +2236,7 @@ a.my-orders-login {
 }
 
 .company-contacts p {
-  width: 179px;
+  width: 182px;
   margin-bottom: 36px;
 }
 
@@ -2143,16 +2255,20 @@ a.my-orders-login {
 
   display: inline-block;
 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 300px;
-  margin-top: 31px;
-  padding-top: 13px;
-  padding-bottom: 8px;
+  margin-top: 32px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 3px;
 
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
 
   color: #ffffff;
+  border-radius: 3px;
   background-color: #ee3643;
 }
 
@@ -2399,16 +2515,6 @@ div.extra-navigation input {
   width: 270px;
 }
 
-a.extra-navigation-link.bookmarks {
-  display: inline-block;
-
-  margin-right: 20px;
-  padding-top: 12px;
-  padding-right: 21px;
-  padding-bottom: 12px;
-  padding-left: 21px;
-}
-
 div.extra-navigation {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
@@ -2429,16 +2535,6 @@ div.extra-navigation {
   position: relative;
   top: 0;
   left: 0;
-}
-
-a.extra-navigation-link.cart {
-  display: inline-block;
-
-  margin-right: 10px;
-  padding-top: 12px;
-  padding-right: 21px;
-  padding-bottom: 12px;
-  padding-left: 21px;
 }
 
 .extra-navigation-link.cart::before {
@@ -2469,10 +2565,6 @@ a.login-btn {
 .header-info-auth {
   margin-left: 70px;
   padding: 0;
-}
-
-.header-info-auth a {
-  padding-right: 22px;
 }
 
 .login-btn::before {
@@ -2636,14 +2728,12 @@ p.new-price {
 }
 
 p.new-price {
-  /* border-radius: 3px; */
   margin-right: 48px;
   padding-left: 35px;
-  /* padding-right: 10px; */
 
   border-top-left-radius: 3px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 8.5px;
+  border-bottom-right-radius: 8.5px;
   border-bottom-left-radius: 3px;
 }
 
@@ -2654,4 +2744,72 @@ p.new-price {
 
 span.tag-new {
   top: 6px;
+}
+
+.section-manufacturer a {
+  margin-top: 4px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+}
+
+.section-manufacturer .section-header {
+  margin-bottom: 21px;
+}
+
+.manufacturer-bosch {
+  padding-bottom: 2px;
+}
+
+.manufacturer-makita {
+  padding-bottom: 5px;
+}
+
+.manufacturer-dewalt {
+  padding-bottom: 5px;
+}
+
+.manufacturer-interskol {
+  padding-right: 2px;
+  padding-bottom: 15px;
+}
+
+.manufacturer-hitachi {
+  padding-top: 2px;
+  padding-left: 6px;
+}
+
+.manufacturer-lg {
+  padding-right: 3px;
+  padding-bottom: 2px;
+}
+
+.manufacturer-aeg {
+  padding-bottom: 4px;
+  padding-left: 2px;
+}
+
+.manufacturer-metabo {
+  padding-bottom: 9px;
+  padding-left: 5px;
+}
+
+.services-slider-controls::after {
+  position: absolute;
+  top: -48px;
+  right: 0;
+
+  display: inline-block;
+
+  width: 10px;
+  height: 279px;
+
+  content: '';
+
+  background-image: url('../img/shadow.png');
+  background-repeat: no-repeat;
+  background-size: 10px 279px;
+}
+
+.services-slider-controls {
+  position: relative;
 }
