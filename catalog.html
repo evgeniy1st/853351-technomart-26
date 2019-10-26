@@ -88,11 +88,13 @@
           <section class="sort">
             <h3 class="sort-title">Сортировка</h3>
             <ul>
-              <li><a class="active" href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По функционалу</a></li>
-              <li><a href="#"><span class="visually-hidden">По увеличению</span></a></li>
-              <li><a href="#"><span class="visually-hidden">По уменьшению</span></a></li>
+              <li class="sort-price"><a class="active" href="#">По цене</a></li>
+              <li class="sort-type"><a href="#">По типу</a></li>
+              <li class="sort-function"><a href="#">По функционалу</a></li>
+              <li class="sort-arrow">
+                  <a href="#" class="sort-arrow-up"><span class="visually-hidden">По увеличению</span></a>
+                  <a href="#" class="sort-arrow-down"><span class="visually-hidden">По уменьшению</span></a>
+              </li>
             </ul>
           </section>
           <ul class="product-list">
@@ -105,8 +107,8 @@
                 </div>
               </div>
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="old-price">22500 р</p>
-              <p class="new-price">15500 р<span class="for-rotate"></span></p>
+              <p class="old-price">22500 р.</p>
+              <p class="new-price">15500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -119,8 +121,8 @@
                 </div>
               </div>
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p class="old-price">30500 р</p>
-              <p class="new-price">25500 р<span class="for-rotate"></span></p>
+              <p class="old-price">30500 р.</p>
+              <p class="new-price">25500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -134,7 +136,7 @@
               </div>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <p class="old-price"></p>
-              <p class="new-price">12500 р<span class="for-rotate"></span></p>
+              <p class="new-price">12500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -147,8 +149,8 @@
                 </div>
               </div>
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="old-price">22500 р</p>
-              <p class="new-price">15500 р<span class="for-rotate"></span></p>
+              <p class="old-price">22500 р.</p>
+              <p class="new-price">15500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -161,8 +163,8 @@
                 </div>
               </div>
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p class="old-price">30500 р</p>
-              <p class="new-price">25500 р<span class="for-rotate"></span></p>
+              <p class="old-price">30500 р.</p>
+              <p class="new-price">25500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -176,7 +178,7 @@
               </div>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <p class="old-price"></p>
-              <p class="new-price">12500 р<span class="for-rotate"></span></p>
+              <p class="new-price">12500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -189,8 +191,8 @@
                 </div>
               </div>
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="old-price">22500 р</p>
-              <p class="new-price">15500 р<span class="for-rotate"></span></p>
+              <p class="old-price">22500 р.</p>
+              <p class="new-price">15500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -203,8 +205,8 @@
                 </div>
               </div>
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p class="old-price">30500 р</p>
-              <p class="new-price">25500 р<span class="for-rotate"></span></p>
+              <p class="old-price">30500 р.</p>
+              <p class="new-price">25500 р.</p>
               <span class="tag-new">new</span>
             </li>
 
@@ -218,7 +220,7 @@
               </div>
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <p class="old-price"></p>
-              <p class="new-price">12500 р<span class="for-rotate"></span></p>
+              <p class="new-price">12500 р.</p>
               <span class="tag-new">new</span>
             </li>
           </ul>
@@ -226,7 +228,7 @@
             <li><a class="pagination-item active" href="#" aria-label="перейти на 1 страницу каталога">1</a></li>
             <li><a class="pagination-item" href="#" aria-label="перейти на 2 страницу каталога">2</a></li>
             <li><a class="pagination-item" href="#" aria-label="перейти на 3 страницу каталога">3</a></li>
-            <li><a class="pagination-item" href="#" aria-label="перейти на следующую страницу каталога">Следующая</a>
+            <li><a class="pagination-item next-page" href="#" aria-label="перейти на следующую страницу каталога">Следующая</a>
             </li>
           </ul>
         </div>
@@ -297,8 +299,8 @@
 
     <section class="product-description">
       <h2>Пара слов о перфораторах</h2>
-      <p>Перфоратор универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-        бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+      <p>Перфоратор &#8212; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        бетоне и камне. <br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
         функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном
         устройстве будут совмещены отбойный млоток и ударная дрель</p>
     </section>

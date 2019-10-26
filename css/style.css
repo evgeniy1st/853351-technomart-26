@@ -438,15 +438,12 @@ a.extra-navigation-link.cart-full {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 508px;
   margin: 0;
   padding: 0;
   padding-top: 21px;
-  padding-left: 130px;
 
   list-style: none;
 }
@@ -537,7 +534,7 @@ a.extra-navigation-link.cart-full {
   font-weight: normal;
 
   color: rgba(0, 0, 0, .3);
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sort a:hover {
@@ -953,7 +950,6 @@ a.extra-navigation-link.cart-full {
   font-size: 17px;
 
   width: 77px;
-  height: 38px;
   margin-top: 9px;
   margin-bottom: 25px;
 
@@ -1525,7 +1521,7 @@ a.profile-name:active {
   background-repeat: no-repeat;
 }
 
-.profile-exit {
+a.profile-exit {
   margin-bottom: 5px;
   margin-left: -4px;
   padding-top: 28px;
@@ -2554,7 +2550,6 @@ a.header-phone {
 a.login-btn {
   margin-right: 10px;
   margin-left: 0;
-  /* text-align: right; */
   padding-left: 25px;
 }
 
@@ -2812,4 +2807,242 @@ span.tag-new {
 
 .services-slider-controls {
   position: relative;
+}
+
+/* pixel perfect */
+
+.profile-extra {
+  padding-top: 1px;
+  padding-left: 44px;
+}
+
+a.profile-exit {
+  background-image: url('../img/icon-logout.svg');
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  margin-left: 15px;
+  padding-left: 0;
+}
+
+.breadcrumbs {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 359px;
+  margin-left: 128px;
+}
+
+.header-info-contacts a {
+  padding-top: 11px;
+}
+
+.filter-title {
+  margin-bottom: 18px;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.filter-subtitle {
+  margin-bottom: 21px;
+}
+
+.range-line-active {
+  width: 120px;
+}
+
+.filter-price-field {
+  font-size: 18px;
+
+  display: inline-block;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 94px;
+  padding-top: 8px;
+  padding-right: 7px;
+  padding-bottom: 10px;
+
+  vertical-align: middle;
+}
+
+.filter-section {
+  width: 642px;
+}
+
+.filter-section .filter-manufacturer,
+.filter-section .filter-price {
+  margin-bottom: 22px;
+}
+
+.filter-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.label-manufacturer,
+.label-power {
+  display: inline-block;
+
+  margin-bottom: 17px;
+}
+
+.label-manufacturer::before {
+  margin-right: 7px;
+}
+
+.label-power::before {
+  height: 26px;
+  margin-right: 10px;
+}
+
+.sort {
+  margin-bottom: 20px;
+  padding-top: 11px;
+}
+
+.sort .sort-title {
+  padding-top: 1px;
+  padding-left: 5px;
+}
+
+.profile-exit {
+  margin-left: -5px;
+}
+
+.breadcrumbs li {
+  margin-right: 19px;
+}
+
+.filter-price-field[name='price-min'] {
+  margin-right: 17px;
+  padding-right: 0;
+  padding-left: 8px;
+}
+
+.filter-price-field+span {
+  position: relative;
+  bottom: 7px;
+}
+
+.filter-manufacturer .filter-subtitle {
+  margin-bottom: 19px;
+}
+
+.side-filter .filter-manufacturer {
+  margin-bottom: 24px;
+}
+
+.filter-manufacturer ul {
+  margin-bottom: 3px;
+}
+
+.filter-power .filter-subtitle {
+  margin-bottom: 19px;
+
+  letter-spacing: .6px;
+}
+
+.label-power {
+  margin-bottom: 15px;
+}
+
+.filter-section .filter-power {
+  margin-bottom: 58px;
+}
+
+.catalog-product .product-wrap {
+  margin-bottom: 8px;
+}
+
+.catalog-product h3 {
+  line-height: 20px;
+}
+
+a.sort-arrow-up {
+  display: inline-block;
+
+  width: 0;
+  margin-bottom: 3px;
+  margin-left: 1px;
+
+  border: 11px solid rgb(238, 54, 67);
+  border-top-width: 0;
+  border-right-width: 6px;
+  border-right-color: transparent;
+  border-left-width: 6px;
+  border-left-color: transparent;
+}
+
+a.sort-arrow-down {
+  display: inline-block;
+
+  width: 0;
+  margin-top: 3px;
+  margin-right: 1px;
+
+  border: 11px solid rgb(200, 200, 200);
+  border-right-width: 6px;
+  border-right-color: transparent;
+  border-bottom-width: 0;
+  border-left-width: 6px;
+  border-left-color: transparent;
+}
+
+.sort-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  width: 47px;
+  margin-top: 1px;
+  margin-left: auto;
+}
+
+.sort-price {
+  margin-right: 69px;
+}
+
+.sort-type {
+  margin-right: 66px;
+}
+
+.pagination {
+  width: 285px;
+  padding-top: 31px;
+}
+
+.pagination-item {
+  display: inline-block;
+
+  padding: 10px 17px;
+
+  vertical-align: middle;
+
+  border-radius: 3px;
+}
+
+.next-page {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 141px;
+  margin-right: auto;
+  padding-left: 32px;
+
+  letter-spacing: 1.4px;
+}
+
+.product-description h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-weight: normal;
+
+  letter-spacing: .1px;
 }
