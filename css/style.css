@@ -3157,4 +3157,15 @@ button.map-close {
   right: 9px;
 }
 
+.extra-navigation {
+  flex-wrap: wrap;
+}
+
+.footer-main-navigation ul {
+  flex-wrap: wrap;
+}
+
+.footer-secondary-navigation ul {
+  flex-wrap: wrap;
+}
 
