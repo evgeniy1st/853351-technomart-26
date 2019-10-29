@@ -332,17 +332,17 @@
     <form action="https://echo.htmlacademy.ru" method="post">
       <fieldset>
         <legend class="visually-hidden">Форма обратной связи</legend>
-        <label>
+        <label class="feedback-label label-feedback-name">
           Ваше имя:<br>
-          <input type="text" placeholder="Имя Фамилия" name="modal-feedback-name">
+          <input class="feedback-field feedback-field-name" type="text" placeholder="Имя Фамилия" name="modal-feedback-name">
         </label>
-        <label>
+        <label class="feedback-label label-feedback-email">
           Ваш e-mail:<br>
-          <input type="email" placeholder="email@example.com" name="modal-feedback-email">
+          <input class="feedback-field feedback-field-email" type="email" placeholder="email@example.com" name="modal-feedback-email">
         </label>
-        <label>
+        <label class="feedback-label label-feedback-text">
           Текст письма:<br>
-          <textarea placeholder="В свободной форме" name="modal-feedback-text"></textarea>
+          <textarea class="feedback-field feedback-field-text" placeholder="В свободной форме" name="modal-feedback-text"></textarea>
         </label>
       </fieldset>
       <div class="btn-wraper">

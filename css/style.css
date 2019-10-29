@@ -1084,7 +1084,7 @@ a.extra-navigation-link.cart-full {
 
   padding-top: 65px;
   padding-right: 130px;
-  padding-bottom: 65px;
+  padding-bottom: 69px;
   padding-left: 130px;
 
   background-color: #f4f7f9;
@@ -1101,7 +1101,7 @@ a.extra-navigation-link.cart-full {
 
 .product-description p {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 26px;
 }
 
 .footer-logo {
@@ -2445,7 +2445,7 @@ div#map {
   position: absolute;
 
   width: 940px;
-  min-height: 450px;
+min-height: 445px;
 }
 
 .modal-map button {
@@ -2677,7 +2677,8 @@ span.slider-dot {
   border-radius: 3px;
 }
 
-.index-product .tag-new {
+.index-product .tag-new,
+.catalog-product .tag-new {
   display: none;
 }
 
@@ -2865,10 +2866,12 @@ a.profile-exit {
   box-sizing: border-box;
   width: 94px;
   padding-top: 8px;
-  padding-right: 7px;
   padding-bottom: 10px;
 
   vertical-align: middle;
+  padding-right: 0px;
+  padding-left: 2px;
+  letter-spacing: -0.5px;
 }
 
 .filter-section {
@@ -2920,14 +2923,15 @@ a.profile-exit {
 }
 
 .filter-price-field[name='price-min'] {
-  margin-right: 17px;
   padding-right: 0;
   padding-left: 8px;
+  margin-right: 12px;
 }
 
 .filter-price-field+span {
   position: relative;
-  bottom: 7px;
+  bottom: 8px;
+  right: 5px;
 }
 
 .filter-manufacturer .filter-subtitle {
@@ -3046,3 +3050,111 @@ a.sort-arrow-down {
 
   letter-spacing: .1px;
 }
+
+.modal-feedback.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.modal-feedback form {
+  min-height: 379px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+
+.modal-feedback {
+  min-height: 423px;
+}
+
+.modal-feedback fieldset {
+  padding-top: 48px;
+}
+
+.modal-feedback fieldset {
+  padding-top: 47px;
+}
+
+.feedback-field-name,
+.feedback-field-email {
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+}
+
+.modal-feedback fieldset {
+  align-content: flex-start;
+}
+
+.feedback-field-name,
+.feedback-field-email {
+  margin-bottom: 21px;
+}
+
+.feedback-field-text {
+  margin-top: 10px;
+  width: 460px;
+  box-sizing: border-box;
+  min-height: 114px;
+  padding-top: 8px;
+  padding-left: 14px;
+}
+
+.modal-feedback .modal-close {
+  top: 9px;
+  right: 9px;
+}
+
+.modal-feedback .modal-close {
+  top: 9px;
+  right: 9px;
+}
+
+.modal-feedback .btn-wraper {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-feedback form {
+  min-height: 423px;
+}
+
+.btn-wraper button {
+  border: none;
+  width: 460px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+}
+button.map-close {
+  top: 9px;
+  right: 9px;
+}
+
+

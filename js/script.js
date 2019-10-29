@@ -133,12 +133,15 @@ if (document.querySelector('.modal-feedback')) {
     btnCloseModalfeedback.addEventListener('click', function(event) {
         event.preventDefault();
         modalfeedback.classList.remove('active');
+        modalfeedback.classList.remove('modal-error');
     })
 
     form.addEventListener("submit", function (event) {
       if (!inputEmail.value) {
         event.preventDefault();
-        console.log("Нужно ввести логин и пароль");
+        modalfeedback.classList.remove("modal-error");
+        modalfeedback.offsetWidth = modalfeedback.offsetWidth;
+        modalfeedback.classList.add('modal-error');
       } else {
         if (isStorageSupport) {
           localStorage.setItem("Name", inputName.value);
@@ -224,6 +227,9 @@ function closeFromKeyboard (modal) {
       event.preventDefault();
       if (modal.classList.contains('active')) {
         modal.classList.remove('active');
+      }
+      if (modal.classList.contains('modal-error')) {
+        modal.classList.remove('modal-error');
       }
     }
   });
