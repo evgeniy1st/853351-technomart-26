@@ -19,7 +19,7 @@
         <form action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="searchField">Поиск по сайту</label>
           <input type="search" name="search" id="searchField" placeholder="Поиск:">
-          <button class="visually-hidden" type="submit" aria-label="Найти"></button>
+          <button class="search-btn" type="submit" aria-label="Найти"></button>
         </form>
         <a class="extra-navigation-link bookmarks" href="#">Закладки:</a>
         <a class="extra-navigation-link cart" href="#">Корзина:</a>
@@ -34,7 +34,7 @@
       </div>
       <div class="header-info-auth">
         <a class="login-btn" href="#">Войти</a>
-        <a href="#">Регистрация</a>
+        <a class="registration" href="#">Регистрация</a>
       </div>
     </div>
     <nav>
@@ -126,7 +126,7 @@
         </div>
         <ul class="product-list">
           <li class="product-item index-product">
-            <div class="product-wrap">
+            <div class="product-wrap" tabindex="0">
               <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
               <div class="product-controls">
                 <button class="btn-buy" type="button">Купить</button>
@@ -135,11 +135,11 @@
             </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p class="old-price">32500 р.</p>
-            <p class="new-price">25500 р.</span></p>
+            <p class="new-price">25500 р.</p>
             <span class="tag-new">new</span>
           </li>
           <li class="product-item index-product">
-            <div class="product-wrap">
+            <div class="product-wrap" tabindex="0">
               <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <div class="product-controls">
                 <button class="btn-buy" type="button">Купить</button>
@@ -148,11 +148,11 @@
             </div>
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p class="old-price">22500 р.</p>
-            <p class="new-price">15500 р.</span></p>
+            <p class="new-price">15500 р.</p>
             <span class="tag-new">new</span>
           </li>
           <li class="product-item index-product">
-            <div class="product-wrap">
+            <div class="product-wrap" tabindex="0">
               <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
               <div class="product-controls">
                 <button class="btn-buy" type="button">Купить</button>
@@ -161,11 +161,11 @@
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p class="old-price">30500 р.</p>
-            <p class="new-price">25500 р.</span></p>
+            <p class="new-price">25500 р.</p>
             <span class="tag-new">new</span>
           </li>
           <li class="product-item index-product new-product">
-            <div class="product-wrap">
+            <div class="product-wrap" tabindex="0">
               <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <div class="product-controls">
                 <button class="btn-buy" type="button">Купить</button>
@@ -174,7 +174,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 2000</h3>
             <p class="old-price" style="display: none;"></p>
-            <p class="new-price">12500 р.</span></p>
+            <p class="new-price">12500 р.</p>
             <span class="tag-new">new</span>
           </li>
         </ul>
@@ -227,13 +227,13 @@
             </div>
             <div class="service-item service-guarantee">
               <h3>Гарантия</h3>
-              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-                возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом
+              <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его
+                возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом
                 уж восстановите как-нибудь сами.</p>
             </div>
             <div class="service-item service-credit">
               <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <p>Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p>
               <a href="#">Отправить заявку</a>
             </div>
           </div>
@@ -372,7 +372,7 @@
   </section>
 
 
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<1657ccbe-52b7-475f-878f-55a3fee624cc>" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<1657ccbe-52b7-475f-878f-55a3fee624cc>"></script>
   <script src="js/script.js"></script>
 </body>
 

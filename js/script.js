@@ -169,6 +169,7 @@ if (document.querySelector('.modal-map')) {
     })
 
     btnCloseModalmap.addEventListener('click', function (event) {
+      modalmap.classList.remove('active');
       event.preventDefault();
       modalmap.classList.remove('active');
     })
