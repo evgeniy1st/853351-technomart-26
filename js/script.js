@@ -63,14 +63,25 @@ if (document.querySelector('.slider')) {
 if (document.querySelector('.section-servises')) {
 
   var listService = document.querySelectorAll('.servises-tab')
+  var listInput = document.querySelectorAll('.servises-input')
   var slidesService = document.querySelectorAll('.service-item')
   var indexSlideService = 0
 
     addActiveService()
 
-    for (var i = 0; i < listService.length; i++) {
-      listService[i].data = i;
-      listService[i].addEventListener('click', function (event) {
+    // for (var i = 0; i < listService.length; i++) {
+    //   listService[i].data = i;
+    //   listService[i].addEventListener('click', function (event) {
+    //     event.preventDefault
+    //     removeActiveService()
+    //     indexSlideService = Number(this.data);
+    //     addActiveService()
+    //   })
+    // }
+
+    for (var i = 0; i < listInput.length; i++) {
+      listInput[i].data = i;
+      listInput[i].addEventListener('change', function (event) {
         event.preventDefault
         removeActiveService()
         indexSlideService = Number(this.data);

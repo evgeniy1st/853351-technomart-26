@@ -6,7 +6,6 @@ body {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1200px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;
@@ -31,12 +30,11 @@ body img {
   margin: -1px;
 }
 
-main {
+.tag-main {
   display: block;
 }
 
 .main-header {
-  width: 1200px;
   margin-bottom: 60px;
   padding-bottom: 59px;
 
@@ -61,13 +59,15 @@ main {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1200px;
   min-height: 42px;
-  padding-right: 130px;
-  padding-left: 130px;
 
   color: #ffffff;
   background-color: #293449;
+  width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pre-header a {
@@ -204,16 +204,17 @@ main {
 
 a.extra-navigation-link.bookmarks {
   display: inline-block;
+  vertical-align: middle;
 
-  margin-right: 20px;
   padding-top: 12px;
-  padding-right: 21px;
+  padding-right: 41px;
   padding-bottom: 12px;
   padding-left: 21px;
 }
 
 a.extra-navigation-link.bookmarks-for-cart-full {
   margin-right: 0;
+  padding-right: 27px;
 }
 
 .extra-navigation-link.cart::after {
@@ -230,10 +231,10 @@ a.extra-navigation-link.bookmarks-for-cart-full {
 
 a.extra-navigation-link.cart {
   display: inline-block;
+  vertical-align: middle;
 
-  margin-right: 10px;
   padding-top: 12px;
-  padding-right: 21px;
+  padding-right: 31px;
   padding-bottom: 12px;
   padding-left: 21px;
 }
@@ -290,9 +291,13 @@ a.extra-navigation-link.cart-full {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 46px;
-  padding-right: 130px;
   padding-bottom: 24px;
-  padding-left: 182px;
+
+  padding-right: 10px;
+  padding-left: 62px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
 }
 
 .header-phone {
@@ -342,6 +347,7 @@ a.extra-navigation-link.cart-full {
 }
 
 .header-info-contacts span {
+  width: 253px;
   font-size: 14px;
   font-weight: normal;
 
@@ -415,9 +421,11 @@ a.extra-navigation-link.cart-full {
 }
 
 .main-wrapper {
-  width: 940px;
   margin-right: auto;
   margin-left: auto;
+  width: 960px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .breadcrumbs {
@@ -733,27 +741,10 @@ a.extra-navigation-link.cart-full {
   background-color: #5fbb2d;
 }
 
-/* .btn-buy:hover::before {
-  opacity: 1;
-} */
 
 .btn-buy:active {
   background-color: #518534;
 }
-
-/* .btn-buy::before {
-  display: inline-block;
-
-  width: 15px;
-  height: 15px;
-
-  content: '';
-  vertical-align: middle;
-
-  opacity: .5;
-  background-image: url('../img/icon-cart-small.svg');
-  background-repeat: no-repeat;
-} */
 
 .btn-wishlist {
   text-transform: uppercase;
@@ -813,28 +804,6 @@ a.extra-navigation-link.cart-full {
   border-top-color: transparent;
   border-right: 0;
   border-bottom-color: transparent;
-}
-
-.tag-new {
-  font-size: 17px;
-  font-weight: normal;
-
-  position: absolute;
-  z-index: 2;
-  top: 3px;
-  right: -28px;
-
-  display: inline-block;
-
-  width: 93px;
-  padding: 6px 0;
-
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  vertical-align: middle;
-
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
 .filter-section {
@@ -1165,25 +1134,30 @@ a.extra-navigation-link.cart-full {
   line-height: 24px;
 
   padding-top: 65px;
-  padding-right: 130px;
   padding-bottom: 69px;
-  padding-left: 130px;
 
   background-color: #f4f7f9;
+  margin: 0 auto;
 }
 
 .product-description h2 {
   font-size: 30px;
   line-height: 30px;
 
-  margin: 0;
-
   text-transform: uppercase;
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 
 .product-description p {
-  margin: 0;
   padding-top: 26px;
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer-logo {
@@ -1211,12 +1185,16 @@ a.extra-navigation-link.cart-full {
   flex-direction: column;
 
   margin-bottom: 0;
-  padding-right: 130px;
   padding-bottom: 33px;
-  padding-left: 130px;
 
   color: #f1f5f7;
   background-color: #32425c;
+
+  padding-right: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .pre-footer ul {
@@ -1334,12 +1312,16 @@ a.footer-logo {
   -ms-flex-pack: justify;
   justify-content: space-between;
 
-  padding-right: 130px;
   padding-bottom: 10px;
-  padding-left: 130px;
 
   color: #f1f5f7;
   background-color: #293449;
+
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
 }
 
 .main-footer ul {
@@ -1698,6 +1680,7 @@ a.my-orders-login {
   position: absolute;
 
   display: inline-block;
+  vertical-align: middle;
 
   width: 22px;
   height: 40px;
@@ -1816,6 +1799,7 @@ a.my-orders-login {
   font-size: 18px;
 
   display: inline-block;
+  vertical-align: middle;
 
   padding-left: 10px;
 }
@@ -1874,6 +1858,7 @@ a.my-orders-login {
 
 .slider-dot {
   display: inline-block;
+  vertical-align: middle;
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1924,28 +1909,6 @@ a.my-orders-login {
   background-image: url('../img/icon-delivery.svg');
   background-position: 195px 35px;
   background-size: 78px 63px;
-}
-
-.tag-new-promo {
-  font-size: 17px;
-  font-weight: normal;
-
-  position: absolute;
-  top: 6px;
-  left: 234px;
-
-  display: inline-block;
-
-  width: 93px;
-  padding: 6px 0;
-
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  text-align: center;
-  vertical-align: middle;
-
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
 .section-manufacturer h2 {
@@ -2054,14 +2017,11 @@ a.my-orders-login {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 1200px;
   min-height: 522px;
   margin-right: auto;
   margin-bottom: 78px;
   margin-left: auto;
   padding-top: 65px;
-  padding-right: 130px;
-  padding-left: 130px;
 
   color: #000000;
   background-color: #f4f7f9;
@@ -2144,6 +2104,9 @@ a.my-orders-login {
   color: #32425c;
   background-color: #ffffff;
 }
+.servises-input:focus~.servises-tab {
+  outline: 1px dotted;
+}
 
 .service-item {
   display: none;
@@ -2210,12 +2173,14 @@ a.my-orders-login {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 940px;
   margin-right: auto;
   margin-bottom: 86px;
   margin-left: auto;
 
   color: #000000;
+  width: 960px;
+  box-sizing: border-box;
+  padding: 0 10px;
 }
 
 .company h2 {
@@ -2525,7 +2490,7 @@ p.logistic-description {
   animation: bounce .3s;
 }
 
-div#map {
+div.map {
   position: absolute;
 
   width: 940px;
@@ -2624,7 +2589,7 @@ div.extra-navigation {
 }
 
 a.extra-navigation-link.buy {
-  width: 149px;
+  width: 148px;
 }
 
 a.header-phone {
@@ -2761,15 +2726,6 @@ span.slider-dot {
   border-radius: 3px;
 }
 
-.index-product .tag-new,
-.catalog-product .tag-new {
-  display: none;
-}
-
-.new-product .tag-new {
-  display: inline-block;
-}
-
 .section-header {
   margin-bottom: 18px;
 }
@@ -2822,53 +2778,52 @@ p.new-price {
   left: 24px;
 }
 
-span.tag-new {
-  top: 6px;
+.manufacturer-link {
+  width: 220px;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.section-manufacturer a {
-  margin-top: 4px;
-  padding-top: 10px;
-  padding-bottom: 11px;
-}
 
 .section-manufacturer .section-header {
   margin-bottom: 21px;
 }
 
-.manufacturer-bosch {
+.manufacturer-bosch img{
   padding-bottom: 2px;
 }
 
-.manufacturer-makita {
+.manufacturer-makita img{
   padding-bottom: 5px;
 }
 
-.manufacturer-dewalt {
+.manufacturer-dewalt img{
   padding-bottom: 5px;
 }
 
-.manufacturer-interskol {
+.manufacturer-interskol img{
   padding-right: 2px;
   padding-bottom: 15px;
 }
 
-.manufacturer-hitachi {
+.manufacturer-hitachi img{
   padding-top: 2px;
   padding-left: 6px;
 }
 
-.manufacturer-lg {
+.manufacturer-lg img{
   padding-right: 3px;
   padding-bottom: 2px;
 }
 
-.manufacturer-aeg {
+.manufacturer-aeg img{
   padding-bottom: 4px;
   padding-left: 2px;
 }
 
-.manufacturer-metabo {
+.manufacturer-metabo img{
   padding-bottom: 9px;
   padding-left: 5px;
 }
@@ -2879,6 +2834,7 @@ span.tag-new {
   right: 0;
 
   display: inline-block;
+  vertical-align: middle;
 
   width: 10px;
   height: 279px;
@@ -2919,8 +2875,11 @@ a.profile-exit {
 
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-width: 359px;
-  margin-left: 128px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 10px;
 }
 
 .header-info-contacts a {
@@ -2975,6 +2934,7 @@ a.profile-exit {
 .label-manufacturer,
 .label-power {
   display: inline-block;
+  vertical-align: middle;
 
   margin-bottom: 17px;
 }
@@ -3054,6 +3014,7 @@ a.profile-exit {
 
 a.sort-arrow-up {
   display: inline-block;
+  vertical-align: middle;
 
   width: 0;
   margin-bottom: 3px;
@@ -3069,6 +3030,7 @@ a.sort-arrow-up {
 
 a.sort-arrow-down {
   display: inline-block;
+  vertical-align: middle;
 
   width: 0;
   margin-top: 3px;
@@ -3322,7 +3284,7 @@ button.map-close {
 }
 
 .extra-navigation input:focus~.search-btn {
-  bottom: 8px;
+  bottom: 12px;
 
   background-image: url('../img/icon-search-red.svg');
 }
@@ -3557,3 +3519,75 @@ a.promo-btn {
 .pre-footer a:first-child:hover {
   border: none;
 }
+
+.label-feedback-name {
+  width: 220px;
+}
+
+.label-feedback-email {
+  width: 220px;
+}
+.new-product::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+.new-promo::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* центровка*/
+
+.pre-header-wrap {
+  background-color: rgb(41, 52, 73);
+}
+
+.section-servises-wrap {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main-footer-wrap {
+  background-color: rgb(41, 52, 73);
+}
+
+.pre-footer-wrap {
+  background-color: rgb(50, 66, 92);
+}
+
+.product-description h2 {
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.product-description p {
+  margin: 0 auto;
+  width: 960px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
